@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
@@ -18,8 +19,20 @@ namespace KvEnvVariable
         public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
         {
             var certData = Environment.GetEnvironmentVariable("cert");
+            string response = null;
 
-            return new OkObjectResult(certData);
+            try
+            {
+                var cert = new X509Certificate(Convert.FromBase64String(certData));
+                response = "Cert acquired and instantiated successfully";
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Failed to load certificate");
+                response = "Failed to load certificate";
+            }
+
+            return new OkObjectResult(response);
         }
     }
 }
