@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KvEnvVariable", "KvEnvVariable.csproj", "{FF078D7D-55EB-4A0D-8F06-3DF886DF35ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF078D7D-55EB-4A0D-8F06-3DF886DF35ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF078D7D-55EB-4A0D-8F06-3DF886DF35ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF078D7D-55EB-4A0D-8F06-3DF886DF35ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF078D7D-55EB-4A0D-8F06-3DF886DF35ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {909F9AFC-6E5A-4B78-BB96-2BA34DE30B11}
+	EndGlobalSection
+EndGlobal
